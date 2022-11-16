@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* REGOLE GENERALI */
 body {
     font-family: Whitney, 'Helvetica', 'Helvetica Neue', sans-serif;
 }
@@ -30,9 +31,9 @@ header a{
     padding: 10px;
 }
 .logoimage{
-    width: 100px;
+    width: 200px;
 }
-.link, .logo, .loginheader{
+.link, .logo, .loginheader, .headerlist{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +48,23 @@ header a{
     width: 200px;
 }
 .headerlist{
-    display: flex;
-    flex-direction: row;
     list-style: none;
+}
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+}
+.container-main{
+    width: 1200px;
+    position: relative;
+    background-color: aqua; 
+    margin-top: 200px; 
+}
+.box{
+    width: calc(1200px / 3);
+    height: 800px;
+    background-color:lightgray;
+    border: 1px solid black;
+    display: inline-block;
 }
